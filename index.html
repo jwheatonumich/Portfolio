@@ -1,6 +1,24 @@
 <style>
 
+    a{
+        color:black;
+    }
+
+    a:hover, a:active {
+        color:white;
+    }
+
+    body{
+        margin:0;
+        width:100%;
+    }
+
     h1{
+        text-align:center;
+        vertical-align:middle;
+    }
+
+    h2{
         text-align:center;
     }
 
@@ -11,19 +29,28 @@
     #outer-container{
         display:flex;
         flex-direction:row;
+        width:100%;
+        justify-content:center;
+        align-items:center;
     }
 
     nav {
-    background-color: lightgrey;
-    position:fixed;
-    top:0;
-    width:100%;
-    height:50px;
-  }
+        background-color: rgb(248, 121, 121);
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:50px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color:white;
+    }
 
     nav li {
-    display: inline;
-    margin-right: 20px;
+        display: inline;
+        margin-right: 20px;
   }
 
     .project-container{
@@ -32,6 +59,7 @@
         margin:0px 25px 0px 25px;
         border: black 2px solid;
         align-items:center;
+        background-color: lightgrey;
     }
 
     .project-img{
@@ -40,20 +68,22 @@
 
     .title-link {
         display:block;
-        width:100;
+        width:100%;
+        text-decoration: none;
     }
 
     #welcome-section {
+        border:o;
         height:100vh;
         padding-left:10vw;
         padding-right:10vw;
         padding-top: 50px; /*Stop overlap from the fixed header*/
-        background: lightblue;
+        background: lightgrey;
         
         display:flex;
         flex-direction:column;
-        align-items:center;
-        justify-items:center;
+        align-items: center;
+        justify-content: center;
     }
         
 </style>
@@ -77,33 +107,36 @@
         <h2>Projects</h2>
         <div id="outer-container">
             <div class="project-container">
+                <a class="project-link" href="https://jwheatonumich.github.io/Cy-Twombly-Tribute/" target="_blank">
+                    <img class="project-img" src="cy-twombly-tribute.jpg" alt="Cy Twombly Tribute Page">
+                </a>
+
                 <a class="title-link" href="https://jwheatonumich.github.io/Cy-Twombly-Tribute/" target="_blank">
                     <h3 class="project-tile">Cy Twombly Tribute</h3>
                 </a>
 
+            </div>
+
+            <div class="project-container">
+
                 <a class="project-link" href="https://jwheatonumich.github.io/Cy-Twombly-Tribute/" target="_blank">
                     <img class="project-img" src="cy-twombly-tribute.jpg" alt="Cy Twombly Tribute Page">
+                </a>
+
+                <a class="title-link" href="https://jwheatonumich.github.io/Cy-Twombly-Tribute/" target="_blank">
+                    <h3 class="project-tile">Cy Twombly Tribute</h3>
                 </a>
             </div>
 
             <div class="project-container">
+                <a class="project-link" href="https://jwheatonumich.github.io/Cy-Twombly-Tribute/" target="_blank">
+                    <img class="project-img" src="cy-twombly-tribute.jpg" alt="Cy Twombly Tribute Page">
+                </a>
+
                 <a class="title-link" href="https://jwheatonumich.github.io/Cy-Twombly-Tribute/" target="_blank">
                     <h3 class="project-tile">Cy Twombly Tribute</h3>
                 </a>
 
-                <a class="project-link" href="https://jwheatonumich.github.io/Cy-Twombly-Tribute/" target="_blank">
-                    <img class="project-img" src="cy-twombly-tribute.jpg" alt="Cy Twombly Tribute Page">
-                </a>
-            </div>
-
-            <div class="project-container">
-                <a class="title-link" href="https://jwheatonumich.github.io/Cy-Twombly-Tribute/" target="_blank">
-                    <h3 class="project-tile">Cy Twombly Tribute</h3>
-                </a>
-
-                <a class="project-link" href="https://jwheatonumich.github.io/Cy-Twombly-Tribute/" target="_blank">
-                    <img class="project-img" src="cy-twombly-tribute.jpg" alt="Cy Twombly Tribute Page">
-                </a>
             </div>
 
         </div>
