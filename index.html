@@ -5,12 +5,45 @@
     }
 
     a:hover, a:active {
-        color:white;
+        color:#584B53;
     }
 
     body{
         margin:0;
         width:100%;
+        background-color: #9D5C63 ;
+    }
+
+    #contact{
+        background-color: white;
+    }
+
+    #contact-container{
+        display:flex;
+        flex-direction:row;
+        width:100%;
+        justify-content:center;
+        align-items:top;
+        min-height: 20vh;
+    }
+
+    #contact-header{
+        color: #9D5C63;
+    }
+
+    .contact-img{
+        width:75px;
+    }
+
+    .contact-link{
+        text-align: center;
+        margin: 0px 25px 0px 25px;
+    }
+
+    footer{
+        background-color: white;
+        color:#584B53;
+        text-align:center;
     }
 
     h1{
@@ -20,10 +53,12 @@
 
     h2{
         text-align:center;
+        color: white;
     }
 
     h3{
         text-align:center;
+        color:white;
     }
     
     #outer-container{
@@ -32,6 +67,7 @@
         width:100%;
         justify-content:center;
         align-items:center;
+        flex-wrap:wrap;
     }
 
     nav {
@@ -56,14 +92,26 @@
     .project-container{
         display:flex;
         flex-direction: column;
-        margin:0px 25px 0px 25px;
         border: black 2px solid;
         align-items:center;
-        background-color: lightgrey;
+        background-color: #584B53;
+        margin:25px 25px 25px 25px;
     }
 
     .project-img{
-        width: 25vw;
+        width: 600px;
+    }
+
+    @media (max-width: 600px){
+        .project-img{
+            width: 300px;
+        } 
+    }
+
+    @media (max-width: 1600px){
+        .project-img{
+            width: 400px;
+        } 
     }
 
     .title-link {
@@ -73,19 +121,19 @@
     }
 
     #welcome-section {
-        border:o;
+        border:0;
         height:100vh;
         padding-left:10vw;
         padding-right:10vw;
         padding-top: 50px; /*Stop overlap from the fixed header*/
-        background: lightgrey;
+        background: white;
         
         display:flex;
         flex-direction:column;
         align-items: center;
         justify-content: center;
     }
-        
+
 </style>
 
 <body>
@@ -119,22 +167,33 @@
 
             <div class="project-container">
 
-                <a class="project-link" href="https://jwheatonumich.github.io/Cy-Twombly-Tribute/" target="_blank">
-                    <img class="project-img" src="cy-twombly-tribute.jpg" alt="Cy Twombly Tribute Page">
+                <a class="project-link" href="https://jwheatonumich.github.io/Blog/" target="_blank">
+                    <img class="project-img" src="blog.jpg" alt="Cy Twombly Tribute Page">
                 </a>
 
-                <a class="title-link" href="https://jwheatonumich.github.io/Cy-Twombly-Tribute/" target="_blank">
-                    <h3 class="project-tile">Cy Twombly Tribute</h3>
+                <a class="title-link" href="https://jwheatonumich.github.io/Blog/" target="_blank">
+                    <h3 class="project-tile">Blog</h3>
                 </a>
             </div>
 
             <div class="project-container">
-                <a class="project-link" href="https://jwheatonumich.github.io/Cy-Twombly-Tribute/" target="_blank">
-                    <img class="project-img" src="cy-twombly-tribute.jpg" alt="Cy Twombly Tribute Page">
+                <a class="project-link" href="https://jwheatonumich.github.io/product-landing/" target="_blank">
+                    <img class="project-img" src="product-landing.jpg" alt="Cy Twombly Tribute Page">
                 </a>
 
-                <a class="title-link" href="https://jwheatonumich.github.io/Cy-Twombly-Tribute/" target="_blank">
-                    <h3 class="project-tile">Cy Twombly Tribute</h3>
+                <a class="title-link" href="https://jwheatonumich.github.io/product-landing/" target="_blank">
+                    <h3 class="project-tile">Product Landing Page</h3>
+                </a>
+
+            </div>
+
+            <div class="project-container">
+                <a class="project-link" href="https://jwheatonumich.github.io/Technical-Documentation/" target="_blank">
+                    <img class="project-img" src="technical-documentation.jpg" alt="Cy Twombly Tribute Page">
+                </a>
+
+                <a class="title-link" href="https://jwheatonumich.github.io/Technical-Documentation/" target="_blank">
+                    <h3 class="project-tile">SQL Technical Documentation</h3>
                 </a>
 
             </div>
@@ -143,7 +202,25 @@
     </div>
 
     <div id="contact">
-        <h2>Let's worth together.</h2>
-            <a>Contact Info</a>
+        <h2 id="contact-header">Let's worth together.</h2>
+        <div id="contact-container">
+
+            <a class="contact-link" id="profile-link" href="https://github.com/jwheatonumich" target="_blank">
+                <img class="contact-img" src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="GitHub Logo">
+            </a>
+
+            <a class="contact-link" href="https://linkedin.com" target="_blank">
+                <img class="contact-img" src="https://cdn3.iconfinder.com/data/icons/social-media-2163/512/linkedin_logo_social-512.png" alt="Linkedin Logo">
+            </a>
+
+            <a class="contact-link" href="mailto:jwheatonumich@gmail.com" target="_blank">
+                <img class="contact-img" src="https://cdn4.iconfinder.com/data/icons/logo-brand/512/gmail_google_mail_email-512.png" alt="Gmail Logo">
+            </a>
+            
+        </div>
     </div>
+
+    <footer>
+        Created by James Heaton
+    </footer>
 </body>
